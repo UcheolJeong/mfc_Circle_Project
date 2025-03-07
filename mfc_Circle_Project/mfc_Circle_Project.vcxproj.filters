@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="programmers">
+      <UniqueIdentifier>{ff92c160-837f-4b2e-8d9b-a32b13605846}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mfc_Circle_Project.h">
@@ -59,5 +62,31 @@
     <Image Include="res\mfc_Circle_Project.ico">
       <Filter>리소스 파일</Filter>
     </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-1_programmers .png">
+      <Filter>programmers</Filter>
+    </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-2_programmers .png">
+      <Filter>programmers</Filter>
+    </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-3_programmers .png">
+      <Filter>programmers</Filter>
+    </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-4_programmers .png">
+      <Filter>programmers</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="2-2_codingtext.txt">
+      <Filter>programmers</Filter>
+    </Text>
+    <Text Include="2-1_codingtext.txt">
+      <Filter>programmers</Filter>
+    </Text>
+    <Text Include="2-3_codingtext.txt">
+      <Filter>programmers</Filter>
+    </Text>
+    <Text Include="2-4_codingtext.txt">
+      <Filter>programmers</Filter>
+    </Text>
   </ItemGroup>
 </Project>

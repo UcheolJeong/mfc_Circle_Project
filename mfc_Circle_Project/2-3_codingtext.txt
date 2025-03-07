@@ -1,0 +1,69 @@
+#include <string>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+int solution(int a, int b, int c, int d) {
+	int answer = 0;
+
+
+	if (a == b && a == c && a == d) {
+		answer = a * 1111;
+	}
+	else if ((a == b && a == c && a != d) || (a == b && a == d && a != c) ||
+		(a == c && a == d && a != b) || (b == c && b == d && b != a)) {
+
+		int p, q;
+
+
+		if (a == b && a == c) {
+			p = a; q = d;
+		}
+		else if (a == b && a == d) {
+			p = a; q = c;
+		}
+		else if (a == c && a == d) {
+			p = a; q = b;
+		}
+		else {
+			p = b; q = a;
+		}
+
+		int result = (10 * p + q);
+		answer = result * result;
+	}
+		else if ((a == b && c == d) || (a == c && b == d) ||
+		(a == d && b == c)) {
+		int p, q;
+		if (a == b) {
+			p = a;
+			q = c;
+		}
+		else if (a == c) {
+			p = a;
+			q = b;
+		}
+		else {
+			p = a;
+			q = b;
+		}
+		answer = (p + q) * abs(p - q);
+	}
+	else if (a == b || a == c || a == d || b == c || b == d || c == d) {
+		if (a == b) answer = c * d;
+		else if (a == c) answer = b * d;
+		else if (a == d) answer = b * c;
+		else if (b == c) answer = a * d;
+		else if (b == d) answer = a * c;
+		else if (c == d) answer = a * b;
+	}
+	else {
+		answer = min({ a, b, c, d });
+	}
+
+	return answer;
+}
+
+
