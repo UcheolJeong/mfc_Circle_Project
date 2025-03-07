@@ -211,10 +211,18 @@
     <None Include="res\mfcCircleProject.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\jwc89\Desktop\2-1_programmers .png" />
-    <Image Include="C:\Users\jwc89\Desktop\2-2_programmers .png" />
-    <Image Include="C:\Users\jwc89\Desktop\2-3_programmers .png" />
-    <Image Include="C:\Users\jwc89\Desktop\2-4_programmers .png" />
+    <Image Include="C:\Users\jwc89\Desktop\2-1_programmers .png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-2_programmers .png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-3_programmers .png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="C:\Users\jwc89\Desktop\2-4_programmers .png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
     <Image Include="res\mfc_Circle_Project.ico" />
   </ItemGroup>
   <ItemGroup>
